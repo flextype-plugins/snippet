@@ -41,4 +41,4 @@ enabled: true # or `false` to disable the plugin
 ```
 
 ## License
-See [LICENSE](https://github.com/flextype-plugins/snippet/blob/master/LICENSE)
+See [LICENSE](https://github.com/flextype-plugins/snippet/blob/master/LICENSE.txt)
