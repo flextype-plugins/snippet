@@ -1,5 +1,5 @@
 name: Snippet
-version: 1.0.0
+version: 1.0.1
 description: "Snippet plugin provides a basic way to work with code snippets."
 author:
   name: Sergey Romanenko
@@ -8,6 +8,3 @@ author:
 homepage: https://github.com/flextype-plugins/snippet
 bugs: https://github.com/flextype-plugins/snippet/issues
 license: MIT
-
-# Plugin settings
-enabled: true

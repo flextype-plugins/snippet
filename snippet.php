@@ -36,12 +36,19 @@ class Snippet
      * @param  string  $snippet_name  Snippet name
      * @return void
      */
-    public static function get($snippet_name) : void
+    public static function get($snippet_name)
     {
         $snippet_path = PATH['site'] . '/snippets/' . $snippet_name . '.php';
 
         if (Filesystem::fileExists($snippet_path)) {
+            // Turn on output buffering
+            ob_start();
+
+            // Include view file
             include $snippet_path;
+
+            // Output...
+            return ob_get_clean();
         } else {
             throw new \RuntimeException("Snippet {$snippet_path} does not exist.");
         }
